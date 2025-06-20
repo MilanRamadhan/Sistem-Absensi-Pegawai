@@ -2,6 +2,10 @@
 
 return [
 
+<<<<<<< HEAD
+    'default' => env('FILESYSTEM_DISK', 'local'),
+
+=======
     /*
     |--------------------------------------------------------------------------
     | Default Filesystem Disk
@@ -28,6 +32,7 @@ return [
     |
     */
 
+>>>>>>> 1871dce885169eddbdd6e1f679e891f946aa85e2
     'disks' => [
 
         'local' => [
@@ -56,6 +61,8 @@ return [
 
     ],
 
+<<<<<<< HEAD
+=======
     /*
     |--------------------------------------------------------------------------
     | Symbolic Links
@@ -67,6 +74,7 @@ return [
     |
     */
 
+>>>>>>> 1871dce885169eddbdd6e1f679e891f946aa85e2
     'links' => [
         public_path('storage') => storage_path('app/public'),
     ],

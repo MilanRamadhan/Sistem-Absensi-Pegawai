@@ -1,8 +1,11 @@
 <?php
 
+<<<<<<< HEAD
+=======
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
 
+>>>>>>> 1871dce885169eddbdd6e1f679e891f946aa85e2
 return [
 
     /*
@@ -10,9 +13,15 @@ return [
     | Application Name
     |--------------------------------------------------------------------------
     |
+<<<<<<< HEAD
+    | This value is the name of your application, which will be used when the
+    | framework needs to place the application's name in a notification or
+    | other UI elements where an application name needs to be displayed.
+=======
     | This value is the name of your application. This value is used when the
     | framework needs to place the application's name in a notification or
     | any other location as required by the application or its packages.
+>>>>>>> 1871dce885169eddbdd6e1f679e891f946aa85e2
     |
     */
 
@@ -51,22 +60,34 @@ return [
     |
     | This URL is used by the console to properly generate URLs when using
     | the Artisan command line tool. You should set this to the root of
+<<<<<<< HEAD
+    | the application so that it's available within Artisan commands.
+=======
     | your application so that it is used when running Artisan tasks.
+>>>>>>> 1871dce885169eddbdd6e1f679e891f946aa85e2
     |
     */
 
     'url' => env('APP_URL', 'http://localhost'),
 
+<<<<<<< HEAD
+=======
     'asset_url' => env('ASSET_URL'),
 
+>>>>>>> 1871dce885169eddbdd6e1f679e891f946aa85e2
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
     |--------------------------------------------------------------------------
     |
     | Here you may specify the default timezone for your application, which
+<<<<<<< HEAD
+    | will be used by the PHP date and date-time functions. The timezone
+    | is set to "UTC" by default as it is suitable for most use cases.
+=======
     | will be used by the PHP date and date-time functions. We have gone
     | ahead and set this to a sensible default for you out of the box.
+>>>>>>> 1871dce885169eddbdd6e1f679e891f946aa85e2
     |
     */
 
@@ -78,6 +99,18 @@ return [
     |--------------------------------------------------------------------------
     |
     | The application locale determines the default locale that will be used
+<<<<<<< HEAD
+    | by Laravel's translation / localization methods. This option can be
+    | set to any locale for which you plan to have translation strings.
+    |
+    */
+
+    'locale' => env('APP_LOCALE', 'en'),
+
+    'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),
+
+    'faker_locale' => env('APP_FAKER_LOCALE', 'en_US'),
+=======
     | by the translation service provider. You are free to set this value
     | to any of the locales which will be supported by the application.
     |
@@ -110,12 +143,30 @@ return [
     */
 
     'faker_locale' => 'en_US',
+>>>>>>> 1871dce885169eddbdd6e1f679e891f946aa85e2
 
     /*
     |--------------------------------------------------------------------------
     | Encryption Key
     |--------------------------------------------------------------------------
     |
+<<<<<<< HEAD
+    | This key is utilized by Laravel's encryption services and should be set
+    | to a random, 32 character string to ensure that all encrypted values
+    | are secure. You should do this prior to deploying the application.
+    |
+    */
+
+    'cipher' => 'AES-256-CBC',
+
+    'key' => env('APP_KEY'),
+
+    'previous_keys' => [
+        ...array_filter(
+            explode(',', env('APP_PREVIOUS_KEYS', ''))
+        ),
+    ],
+=======
     | This key is used by the Illuminate encrypter service and should be set
     | to a random, 32 character string, otherwise these encrypted strings
     | will not be safe. Please do this before deploying an application!
@@ -125,6 +176,7 @@ return [
     'key' => env('APP_KEY'),
 
     'cipher' => 'AES-256-CBC',
+>>>>>>> 1871dce885169eddbdd6e1f679e891f946aa85e2
 
     /*
     |--------------------------------------------------------------------------
@@ -140,6 +192,12 @@ return [
     */
 
     'maintenance' => [
+<<<<<<< HEAD
+        'driver' => env('APP_MAINTENANCE_DRIVER', 'file'),
+        'store' => env('APP_MAINTENANCE_STORE', 'database'),
+    ],
+
+=======
         'driver' => 'file',
         // 'store' => 'redis',
     ],
@@ -186,4 +244,5 @@ return [
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 
+>>>>>>> 1871dce885169eddbdd6e1f679e891f946aa85e2
 ];

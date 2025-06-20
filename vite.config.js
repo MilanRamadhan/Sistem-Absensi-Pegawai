@@ -1,9 +1,22 @@
+<<<<<<< HEAD
+import { defineConfig } from 'vite';
+import laravel from 'laravel-vite-plugin';
+import tailwindcss from '@tailwindcss/vite';
+=======
 import { defineConfig } from "vite";
 import laravel from "laravel-vite-plugin";
+>>>>>>> 1871dce885169eddbdd6e1f679e891f946aa85e2
 
 export default defineConfig({
     plugins: [
         laravel({
+<<<<<<< HEAD
+            input: ['resources/css/app.css', 'resources/js/app.js'],
+            refresh: true,
+        }),
+        tailwindcss(),
+    ],
+=======
             input: ["resources/css/app.css", "resources/js/app.js"],
             refresh: true,
         }),
@@ -18,4 +31,5 @@ export default defineConfig({
         },
         https: true, // Tambahkan baris ini untuk mengaktifkan HTTPS
     },
+>>>>>>> 1871dce885169eddbdd6e1f679e891f946aa85e2
 });

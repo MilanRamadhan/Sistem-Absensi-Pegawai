@@ -1,5 +1,12 @@
 <?php
 
+<<<<<<< HEAD
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', function () {
+    return view('welcome');
+});
+=======
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\User\AbsensiController; 
 use App\Http\Controllers\User\IzinController;
@@ -69,3 +76,4 @@ Route::middleware(['auth', 'verified'])->prefix('pegawai')->name('pegawai.')->gr
 Route::middleware(['auth', 'verified', 'admin'])->prefix('admin')->name('admin.')->group(function () {
     Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('dashboard');
 });
+>>>>>>> 1871dce885169eddbdd6e1f679e891f946aa85e2

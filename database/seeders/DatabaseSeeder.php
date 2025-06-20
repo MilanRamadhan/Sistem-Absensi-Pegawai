@@ -1,5 +1,23 @@
 <?php
 
+<<<<<<< HEAD
+  namespace Database\Seeders;
+
+  use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+  use Illuminate\Database\Seeder;
+
+  class DatabaseSeeder extends Seeder
+  {
+      public function run(): void
+      {
+          $this->call([
+              UserSeeder::class,
+              // AbsensiSeeder::class, // Uncomment jika ada dan ingin di-seed
+              // IzinTidakHadirSeeder::class, // Uncomment jika ada dan ingin di-seed
+          ]);
+      }
+  }
+=======
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -19,3 +37,4 @@ class DatabaseSeeder extends Seeder
         ]);
     }
 }
+>>>>>>> 1871dce885169eddbdd6e1f679e891f946aa85e2
